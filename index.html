@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>TV Shows</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="css/main.css">
+  <script src="https://use.fontawesome.com/232d071078.js"></script>
+</head>
+<body>
+  <!-- HEADER START -->
+  
+  <header>
+    <div class="container">
+      <div class="header-inner">
+        <div class="header-inner-content flex-container">
+          <div class="header-content flex-container">
+            <a href="index.html" title="All TV Shows">
+              <div class="header-item logo upper">
+                <span class="accent">tvmaze</span> demo
+              </div>
+            </a>
+            <div class="header-item browes accent">
+              <span class="browes-title upper">browes </span>
+              <i class="fa fa-filter" aria-hidden="true"></i>
+              <i class="fa fa-caret-down" aria-hidden="true"></i>
+              <i class="fa fa-caret-up" aria-hidden="true"></i>
+              <form name="hidden">
+                <input type="hidden" name="filter">
+              </form>
+            </div>
+          </div>
+          <div class="header-item header-search">
+            <div class="search-wrap">
+              <form name="searchForm" class="search-form flex-container">
+                <button type="button" name="search-toggle" class="search-toggle" title="Search">
+                  <i class="fa fa-search accent" aria-hidden="true"></i>
+                </button>
+                <div class="search-content flex-container">
+                  <button type="submit" class="search-find">
+                    <i class="fa fa-search accent" aria-hidden="true"></i>
+                  </button>
+                  <div class="text-input">
+                    <input type="text" name="query" placeholder="Find TV Show" class="input-control">
+                  </div>
+                  <button type="button" name="search-close" class="search-close">
+                    <i class="fa fa-times" aria-hidden="true"></i>
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <nav class="browes-nav">
+          <ul class="browes-nav-list"></ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+  
+  <!-- HEADER END -->
+  
+  <!-- MAIN START -->
+  
+  <main>
+    <div class="container">
+      <div class="message"></div>
+      <div id="main-content" class="flex-container"></div>
+    </div>
+  </main>
+  
+  <!-- MAIN END -->
+  
+  <script src="js/tvshowsmodule.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
